@@ -347,7 +347,7 @@ class Rubik extends ObjectContainer3D
 	[Embed(source="/../embeds/skybox/cube_right.jpg")]
 	private static var NegZ:Class;
 	
-	[Embed(source="../embeds/data/init.zip", mimeType="application/octet-stream")]
+	[Embed(source="../data/init.zip", mimeType="application/octet-stream")]
 	private static var init_zip:Class;
 
 	private var _reflectiveMaterial: ColorMaterial;
@@ -992,53 +992,53 @@ class Plane extends Sprite
 	private var _filesLoaded:Boolean = false;
 	
 	
-	[Embed(source = "../embeds/data/c0_f0.zip", mimeType = "application/octet-stream")]
+	[Embed(source = "../data/c0_f0.zip", mimeType = "application/octet-stream")]
 	private static var c0_f0_zip:Class;
-	[Embed(source="../embeds/data/c0_f1.zip", mimeType="application/octet-stream")]
+	[Embed(source="../data/c0_f1.zip", mimeType="application/octet-stream")]
 	private static var c0_f1_zip:Class;
-	[Embed(source="../embeds/data/c1_f0.zip", mimeType="application/octet-stream")]
+	[Embed(source="../data/c1_f0.zip", mimeType="application/octet-stream")]
 	private static var c1_f0_zip:Class;
-	[Embed(source="../embeds/data/c1_f1.zip", mimeType="application/octet-stream")]
+	[Embed(source="../data/c1_f1.zip", mimeType="application/octet-stream")]
 	private static var c1_f1_zip:Class;
-	[Embed(source="../embeds/data/c2_f0.zip", mimeType="application/octet-stream")]
+	[Embed(source="../data/c2_f0.zip", mimeType="application/octet-stream")]
 	private static var c2_f0_zip:Class;
-	[Embed(source="../embeds/data/c2_f1.zip", mimeType="application/octet-stream")]
+	[Embed(source="../data/c2_f1.zip", mimeType="application/octet-stream")]
 	private static var c2_f1_zip:Class;
-	[Embed(source="../embeds/data/c3_f0.zip", mimeType="application/octet-stream")]
+	[Embed(source="../data/c3_f0.zip", mimeType="application/octet-stream")]
 	private static var c3_f0_zip:Class;
-	[Embed(source="../embeds/data/c3_f1.zip", mimeType="application/octet-stream")]
+	[Embed(source="../data/c3_f1.zip", mimeType="application/octet-stream")]
 	private static var c3_f1_zip:Class;
-	[Embed(source="../embeds/data/c4_f0.zip", mimeType="application/octet-stream")]
+	[Embed(source="../data/c4_f0.zip", mimeType="application/octet-stream")]
 	private static var c4_f0_zip:Class;
-	[Embed(source="../embeds/data/c4_f1.zip", mimeType="application/octet-stream")]
+	[Embed(source="../data/c4_f1.zip", mimeType="application/octet-stream")]
 	private static var c4_f1_zip:Class;
-	[Embed(source="../embeds/data/c5_f0.zip", mimeType="application/octet-stream")]
+	[Embed(source="../data/c5_f0.zip", mimeType="application/octet-stream")]
 	private static var c5_f0_zip:Class;
-	[Embed(source="../embeds/data/c5_f1.zip", mimeType="application/octet-stream")]
+	[Embed(source="../data/c5_f1.zip", mimeType="application/octet-stream")]
 	private static var c5_f1_zip:Class;
-	[Embed(source="../embeds/data/c6_f0.zip", mimeType="application/octet-stream")]
+	[Embed(source="../data/c6_f0.zip", mimeType="application/octet-stream")]
 	private static var c6_f0_zip:Class;
-	[Embed(source="../embeds/data/c6_f1.zip", mimeType="application/octet-stream")]
+	[Embed(source="../data/c6_f1.zip", mimeType="application/octet-stream")]
 	private static var c6_f1_zip:Class;
-	[Embed(source="../embeds/data/c7_f0.zip", mimeType="application/octet-stream")]
+	[Embed(source="../data/c7_f0.zip", mimeType="application/octet-stream")]
 	private static var c7_f0_zip:Class;
-	[Embed(source="../embeds/data/c7_f1.zip", mimeType="application/octet-stream")]
+	[Embed(source="../data/c7_f1.zip", mimeType="application/octet-stream")]
 	private static var c7_f1_zip:Class;
-	[Embed(source="../embeds/data/c8_f0.zip", mimeType="application/octet-stream")]
+	[Embed(source="../data/c8_f0.zip", mimeType="application/octet-stream")]
 	private static var c8_f0_zip:Class;
-	[Embed(source="../embeds/data/c8_f1.zip", mimeType="application/octet-stream")]
+	[Embed(source="../data/c8_f1.zip", mimeType="application/octet-stream")]
 	private static var c8_f1_zip:Class;
-	[Embed(source="../embeds/data/c9_f0.zip", mimeType="application/octet-stream")]
+	[Embed(source="../data/c9_f0.zip", mimeType="application/octet-stream")]
 	private static var c9_f0_zip:Class;
-	[Embed(source="../embeds/data/c9_f1.zip", mimeType="application/octet-stream")]
+	[Embed(source="../data/c9_f1.zip", mimeType="application/octet-stream")]
 	private static var c9_f1_zip:Class;
-	[Embed(source="../embeds/data/c10_f0.zip", mimeType="application/octet-stream")]
+	[Embed(source="../data/c10_f0.zip", mimeType="application/octet-stream")]
 	private static var c10_f0_zip:Class;
-	[Embed(source="../embeds/data/c10_f1.zip", mimeType="application/octet-stream")]
+	[Embed(source="../data/c10_f1.zip", mimeType="application/octet-stream")]
 	private static var c10_f1_zip:Class;
-	[Embed(source="../embeds/data/c11_f0.zip", mimeType="application/octet-stream")]
+	[Embed(source="../data/c11_f0.zip", mimeType="application/octet-stream")]
 	private static var c11_f0_zip:Class;
-	[Embed(source="../embeds/data/c11_f1.zip", mimeType="application/octet-stream")]
+	[Embed(source="../data/c11_f1.zip", mimeType="application/octet-stream")]
 	private static var c11_f1_zip:Class;
 
 	public function Plane(face:Face, bitmapTex:BitmapTexture)
