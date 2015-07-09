@@ -473,6 +473,7 @@ class Rubik extends ObjectContainer3D
 								cubie.extra = new Array(-1, x, y, z);
 								
 								body = _cube1.clone() as Mesh;
+								body.mouseEnabled = true;
 
 							break;
 								
@@ -503,6 +504,7 @@ class Rubik extends ObjectContainer3D
 								cubie.extra = new Array(-1, x, y, z);
 								
 								body = _cube1.clone() as Mesh;
+								body.mouseEnabled = true;
 								
 							break;
 						}

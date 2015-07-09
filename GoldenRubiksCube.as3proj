@@ -85,7 +85,7 @@
   <!-- Other project options -->
   <options>
     <option showHiddenPaths="False" />
-    <option testMovie="Default" />
+    <option testMovie="Unknown" />
     <option testMovieCommand="http://localhost:8383/public/index.html" />
   </options>
   <!-- Plugin storage -->
