@@ -76,7 +76,7 @@ package
 		
 		[Embed(source="/../embeds/bg.jpg")] private var kosmosTextureImage:Class;
 		private var _kosmosBgBitmap:Bitmap = new kosmosTextureImage();
-		public static var _kosmosBg:Mesh;
+		public static var kosmosBg:Mesh;
 		
 		public function Main():void 
 		{
@@ -103,12 +103,12 @@ package
 			
 			var kosmosBitmapTex:BitmapTexture = new BitmapTexture(_kosmosBgBitmap.bitmapData);
 			var kosmosTexMat:TextureMaterial = new TextureMaterial(kosmosBitmapTex);
-			_kosmosBg = new Mesh(new PlaneGeometry(1024, 1024), kosmosTexMat);
+			kosmosBg = new Mesh(new PlaneGeometry(1024, 1024), kosmosTexMat);
 			
-			_kosmosBg.rotationX = 90;
-			_kosmosBg.rotationZ = 180;
-			_kosmosBg.z = -700;
-			_kosmosBg.scale(1.7);
+			kosmosBg.rotationX = 90;
+			kosmosBg.rotationZ = 180;
+			kosmosBg.z = -700;
+			kosmosBg.scale(1.7);
 			
 			rubik = new Rubik();
 	
@@ -165,7 +165,7 @@ package
 			
 			_view.scene.addChild(rubik);
 			
-			_view.scene.addChild(_kosmosBg);
+			_view.scene.addChild(kosmosBg);
 			
 			initRot = true;
 		}
@@ -174,10 +174,10 @@ package
 		{
 			addEventListener(Event.ENTER_FRAME, onEnterFrame);
 			
-			_kosmosBg.mouseEnabled = true;
-			_kosmosBg.addEventListener(MouseEvent3D.MOUSE_DOWN, mouseDownHandler);
-			_kosmosBg.addEventListener(MouseEvent3D.MOUSE_UP,   mouseUpHandler);
-			_kosmosBg.addEventListener(MouseEvent3D.MOUSE_OVER, mouseOverHandler);
+			kosmosBg.mouseEnabled = true;
+			kosmosBg.addEventListener(MouseEvent3D.MOUSE_DOWN, mouseDownHandler);
+			kosmosBg.addEventListener(MouseEvent3D.MOUSE_UP,   mouseUpHandler);
+			kosmosBg.addEventListener(MouseEvent3D.MOUSE_OVER, mouseOverHandler);
 			stage.addEventListener(MouseEvent.MOUSE_MOVE,       stageMouseMoveHandler);
 			stage.addEventListener(Event.MOUSE_LEAVE,       stageMouseLeaveHandler);
 			stage.addEventListener(KeyboardEvent.KEY_DOWN,      onKeyDown);
@@ -474,6 +474,8 @@ class Rubik extends ObjectContainer3D
 								
 								body = _cube1.clone() as Mesh;
 								body.mouseEnabled = true;
+								body.addEventListener(MouseEvent3D.MOUSE_DOWN,  bodyMouseDownHandler);
+								body.addEventListener(MouseEvent3D.MOUSE_UP,  bodyMouseUpHandler);
 
 							break;
 								
@@ -505,6 +507,8 @@ class Rubik extends ObjectContainer3D
 								
 								body = _cube1.clone() as Mesh;
 								body.mouseEnabled = true;
+								body.addEventListener(MouseEvent3D.MOUSE_DOWN,  bodyMouseDownHandler);
+								body.addEventListener(MouseEvent3D.MOUSE_UP,  bodyMouseUpHandler);
 								
 							break;
 						}
@@ -538,6 +542,16 @@ class Rubik extends ObjectContainer3D
 		Main.stageRef.addChild(_infoTool);
 		
 		Main.addObjects();
+	}
+	
+	private function bodyMouseDownHandler(event:MouseEvent3D):void 
+	{
+		Main.kosmosBg.dispatchEvent(event);
+	}
+	
+	private function bodyMouseUpHandler(event:MouseEvent3D):void 
+	{
+		Main.kosmosBg.dispatchEvent(event);
 	}
 	
 	private function onInitZipLoadComplete(evt:Event):void 
